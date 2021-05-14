@@ -8,6 +8,11 @@
       <HosData :stats="stats" />
     </div>
     <HospitalSelect @get-hospital="getHospitalData" :hospitals="hospitals" />
+    <button @click="clearHospitalData" v-if="!stats.hospital_data"
+      class="bg-green-700 text-white rounded p-3 mt-10 focus:outline-none hover:bg-green-600"
+    >
+      Reset
+    </button>
   </main>
   <main class="flex flex-col align-center justify-center text-center" v-else>
     <div class="text-gray-500 text-3xl mt-10 mb-6">
@@ -29,7 +34,7 @@ export default {
     DataTitle,
     DataBoxes,
     HospitalSelect,
-    HosData
+    HosData,
   },
   data() {
     return {
@@ -54,6 +59,14 @@ export default {
       this.stats = hospital;
       this.title = hospital.hospital.name;
       this.hosClick = true;
+    },
+    async clearHospitalData() {
+      this.loading = true;
+      const data = await this.fetchCovidData();
+      this.title = 'Sri Lanka';
+      this.stats = data.data;
+      this.hosClick = false;
+      this.loading = false;
     },
   },
   async created() {
