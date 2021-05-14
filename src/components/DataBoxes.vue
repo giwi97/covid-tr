@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <div class="shadow-md bg-blue-100 p-10 text-center rounded">
+    <div class="shadow-md bg-red-300 p-10 text-center rounded">
       <i class="fa fa-bed"></i>
       <h3 class="text-3xl text-blue-900 font-bold mb-4">
         Deaths
