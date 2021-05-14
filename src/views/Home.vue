@@ -28,7 +28,7 @@ export default {
       title: "Sri Lanka",
       dataDate: "",
       stats: {},
-      countries: [],
+      hospitals: [],
       loadingImage: require("../assets/hourglass.gif"),
     };
   },
@@ -46,7 +46,7 @@ export default {
 
     this.dataDate = data.data.update_date_time;
     this.stats = data.data;
-    this.countries = data.data.hospital_data;
+    this.hospitals = data.data.hospital_data;
     this.loading = false;
   },
 };
