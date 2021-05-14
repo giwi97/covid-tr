@@ -10,13 +10,13 @@
         <span class="font-bold">
           New:
         </span>
-        {{ stats.local_new_cases }}
+        {{ numberWithCommas(stats.local_new_cases) }}
       </div>
       <div class="text-2xl mb-4">
         <span class="font-bold">
           Total:
         </span>
-        {{ stats.local_total_cases }}
+        {{ numberWithCommas(stats.local_total_cases) }}
       </div>
     </div>
 
@@ -30,13 +30,13 @@
         <span class="font-bold">
           New:
         </span>
-        {{ stats.local_new_deaths }}
+        {{ numberWithCommas(stats.local_new_deaths) }}
       </div>
       <div class="text-2xl mb-4">
         <span class="font-bold">
           Total:
         </span>
-        {{ stats.local_deaths }}
+        {{ numberWithCommas(stats.local_deaths) }}
       </div>
     </div>
   </div>
@@ -46,5 +46,10 @@
 export default {
   name: "DataBoxes",
   props: ["stats"],
+  methods: {
+      numberWithCommas(number) {
+          return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+      }
+  }
 };
 </script>
