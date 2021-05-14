@@ -3,6 +3,8 @@
     <DataTitle :text="title" :dataDate="dataDate" />
 
     <DataBoxes :stats="stats" />
+
+    <HospitalSelect :hospitals="hospitals" />
   </main>
   <main class="flex flex-col align-center justify-center text-center" v-else>
     <div class="text-gray-500 text-3xl mt-10 mb-6">
@@ -15,12 +17,14 @@
 <script>
 import DataTitle from '@/components/DataTitle'
 import DataBoxes from '@/components/DataBoxes'
+import HospitalSelect from '@/components/HospitalSelect'
 
 export default {
   name: "Home",
   components: {
     DataTitle,
-    DataBoxes
+    DataBoxes,
+    HospitalSelect
   },
   data() {
     return {
@@ -28,7 +32,7 @@ export default {
       title: "Sri Lanka",
       dataDate: "",
       stats: {},
-      countries: [],
+      hospitals: [],
       loadingImage: require("../assets/hourglass.gif"),
     };
   },
@@ -46,7 +50,7 @@ export default {
 
     this.dataDate = data.data.update_date_time;
     this.stats = data.data;
-    this.countries = data.data.hospital_data;
+    this.hospitals = data.data.hospital_data;
     this.loading = false;
   },
 };
