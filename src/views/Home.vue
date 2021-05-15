@@ -9,16 +9,16 @@
     </div>
     <HospitalSelect @get-hospital="getHospitalData" :hospitals="hospitals" />
     <button @click="clearHospitalData" v-if="!stats.hospital_data"
-      class="bg-green-700 text-white rounded p-3 mt-10 focus:outline-none hover:bg-green-600"
+      class="tw-bg-green-700 tw-text-white tw-rounded tw-p-3 tw-mt-10 focus:tw-outline-none hover:tw-bg-green-600"
     >
       Reset
     </button>
   </main>
-  <main class="flex flex-col align-center justify-center text-center" v-else>
-    <div class="text-gray-500 text-3xl mt-10 mb-6">
+  <main class="tw-flex tw-flex-col tw-align-center tw-justify-center tw-text-center" v-else>
+    <div class="tw-text-gray-500 tw-text-3xl tw-mt-10 tw-mb-6">
       Fetching data
     </div>
-    <img :src="loadingImage" class="w-24 m-auto" alt="" />
+    <img :src="loadingImage" class="tw-w-24 tw-m-auto" />
   </main>
 </template>
 

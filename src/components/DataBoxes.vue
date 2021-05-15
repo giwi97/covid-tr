@@ -1,39 +1,39 @@
 <template>
-  <div class="grid md:grid-cols-2 gap-4">
-    <div class="shadow-md bg-blue-100 p-10 text-center rounded">
+  <div class="tw-grid md:tw-grid-cols-2 tw-gap-4">
+    <div class="tw-shadow-md tw-bg-blue-100 tw-p-10 tw-text-center tw-rounded">
       <i class="fa fa-ambulance"></i>
-      <h3 class="text-3xl text-blue-900 font-bold mb-4">
+      <h3 class="tw-text-3xl tw-text-blue-900 tw-font-bold tw-mb-4">
         Cases
       </h3>
 
-      <div class="text-2xl mb-4">
-        <span class="font-bold">
+      <div class="tw-text-2xl tw-mb-4">
+        <span class="tw-font-bold">
           New:
         </span>
         {{ numberWithCommas(stats.local_new_cases) }}
       </div>
-      <div class="text-2xl mb-4">
-        <span class="font-bold">
+      <div class="tw-text-2xl tw-mb-4">
+        <span class="tw-font-bold">
           Total:
         </span>
         {{ numberWithCommas(stats.local_total_cases) }}
       </div>
     </div>
 
-    <div class="shadow-md bg-red-300 p-10 text-center rounded">
+    <div class="tw-shadow-md tw-bg-red-300 tw-p-10 tw-text-center tw-rounded">
       <i class="fa fa-bed"></i>
-      <h3 class="text-3xl text-blue-900 font-bold mb-4">
+      <h3 class="tw-text-3xl tw-text-blue-900 tw-font-bold tw-mb-4">
         Deaths
       </h3>
 
-      <div class="text-2xl mb-4">
-        <span class="font-bold">
+      <div class="tw-text-2xl tw-mb-4">
+        <span class="tw-font-bold">
           New:
         </span>
         {{ numberWithCommas(stats.local_new_deaths) }}
       </div>
-      <div class="text-2xl mb-4">
-        <span class="font-bold">
+      <div class="tw-text-2xl tw-mb-4">
+        <span class="tw-font-bold">
           Total:
         </span>
         {{ numberWithCommas(stats.local_deaths) }}

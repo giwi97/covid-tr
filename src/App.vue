@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <div class="container">
+  <div class="tw-container">
     <router-view />
   </div>
   <Footer />

@@ -1,9 +1,9 @@
 <template>
-  <div class="text-center">
-    <h2 class="text-3xl font-bold">
+  <div class="tw-text-center">
+    <h2 class="tw-text-3xl tw-font-bold">
       {{ text }}
     </h2>
-    <div class="text-2xl mt-4 mb-10">
+    <div class="tw-text-2xl tw-mt-4 tw-mb-10">
       {{ timestamp }}
     </div>
   </div>

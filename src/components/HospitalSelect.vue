@@ -1,7 +1,7 @@
 <template>
   <select @change="onChange()"
     v-model="selected"
-    class="form-select mt-10 block w-full border p-3 rounded"
+    class="tw-form-select tw-mt-10 tw-block tw-w-full tw-border tw-p-3 tw-rounded"
   >
     <option value="0">Select Hospital</option>
     <option v-for="hospital in hospitals" :value="hospital.id">

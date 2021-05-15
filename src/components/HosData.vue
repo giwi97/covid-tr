@@ -1,18 +1,18 @@
 <template>
-  <div class="shadow-md bg-blue-100 p-5 text-center rounded">
+  <div class="tw-shadow-md tw-bg-blue-100 tw-p-5 tw-text-center tw-rounded">
       <i class="fa fa-ambulance"></i>
-      <h3 class="text-3xl text-blue-900 font-bold mb-4">
+      <h3 class="tw-text-3xl tw-text-blue-900 tw-font-bold tw-mb-4">
         Cases
       </h3>
 
-      <div class="text-2xl mb-4">
-        <span class="font-bold">
+      <div class="tw-text-2xl tw-mb-4">
+        <span class="tw-font-bold">
           Current Patients:
         </span>
         {{ numberWithCommas(stats.treatment_total) }}
       </div>
-      <div class="text-2xl mb-4">
-        <span class="font-bold">
+      <div class="tw-text-2xl tw-mb-4">
+        <span class="tw-font-bold">
           Total Patients:
         </span>
         {{ numberWithCommas(stats.cumulative_total) }}
