@@ -1,5 +1,5 @@
 <template>
-  <header class="tw-text-center tw-bg-green-500 tw-text-white tw-p-4 tw-mb-10">
+  <header class="tw-text-center tw-bg-gray-800 tw-text-white tw-p-4 tw-mb-10">
     <div class="tw-text-3xl md:tw-text-3xl tw-font-sans md:tw-font-serif tw-font-bold">
      <i class="fa fa-lungs-virus"></i> Covid-19 Tracker Sri Lanka
     </div>

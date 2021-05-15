@@ -1,9 +1,11 @@
 <template>
+<div  class="tw-bg-scroll" :style="{'background-image': 'url(' +require('./assets/backg.jpg')+')'}">
   <Header />
   <div class="tw-container">
     <router-view />
   </div>
   <Footer />
+</div>
 </template>
 
 <script>

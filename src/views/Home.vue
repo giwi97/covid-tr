@@ -40,7 +40,7 @@ export default {
     return {
       hosClick: false,
       loading: true,
-      title: "Sri Lanka",
+      title: "Islandwide",
       dataDate: "",
       stats: {},
       hospitals: [],
@@ -63,7 +63,7 @@ export default {
     async clearHospitalData() {
       this.loading = true;
       const data = await this.fetchCovidData();
-      this.title = 'Sri Lanka';
+      this.title = 'Islandwide';
       this.stats = data.data;
       this.hosClick = false;
       this.loading = false;
